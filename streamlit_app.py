@@ -2,7 +2,6 @@ import altair as alt
 import numpy as np
 import pandas as pd
 import streamlit as st
-from streamlit_chat import message
 
 
 """
@@ -40,7 +39,3 @@ st.altair_chart(alt.Chart(df, height=700, width=700)
         color=alt.Color("idx", legend=None, scale=alt.Scale()),
         size=alt.Size("rand", legend=None, scale=alt.Scale(range=[1, 150])),
     ))
-
-
-message("My message") 
-message("Hello bot!", is_user=True)  # align's the message to the right
